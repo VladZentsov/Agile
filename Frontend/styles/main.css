@@ -1,0 +1,459 @@
+/* styles/main.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.section {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.section-top {
+  background-color: #f4f4f4;
+  display: flex;
+}
+
+.top-left-panel {
+  background-color: #e3f2fd;
+  width: 14%; /* Default width - adjustable */
+  display: flex;
+  justify-content: center; /* Center the label horizontally */
+  align-items: center; /* Center the label vertically */
+}
+
+.menu-button {
+  flex: 1; /* Ensure equal width for all buttons */
+  border: none;
+  background-color: transparent; /* Transparent background */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: bold;
+  text-transform: uppercase; /* Optional: Make text uppercase */
+  color: #333; /* Text color */
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: #e3f2fd; /* Light blue hover effect */
+  color: #007bff; /* Blue text color on hover */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-button:active {
+  background-color: #d0e9ff; /* Slightly darker blue on click */
+}
+
+.account-button {
+  font-size: 2rem;
+  background-color: #007bff; /* Slightly darker blue on click */
+  color: #ffffff;
+  border-radius: 15px;
+  border-color: #ffffff;
+}
+
+.top-right-panel {
+  display: flex;
+  height: 60px; /* Set the desired height for buttons */
+  background-color: #e3f2fd;
+  width: 86%; /* Default width - adjustable */
+}
+
+.label {
+  font-size: 2rem; /* Large font size for the label */
+  font-weight: bold;
+  color: #333;
+}
+
+.bottom-container {
+  display: flex;
+  flex: 2;
+}
+
+.section-left {
+  flex: 1; /* Takes 1 parts of the available space */
+  background-color: #e3f2fd;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures sections stack with even spacing */
+  padding: 1rem;
+  height: 100%; /* Full height of parent container */
+  background-color: #e3f2fd;
+  margin-bottom: 50px;
+}
+.section-right {
+  flex: 7; /* Takes 7 parts of the available space */
+  background-color: #ffe0b2;
+  border-radius: 5px;
+  overflow: auto; /* Handle overflowing content */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Top Section */
+.first-section {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #ccc;
+  margin-top: 0.5rem;
+}
+
+/* Middle Section */
+.second-section {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 0.5rem; /* Spacing between buttons */
+  text-decoration: underline;
+}
+
+.project-button {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.project-button:hover {
+  text-decoration: underline;
+  background: white;
+  border-radius: 25px;
+  color: #007bff;
+}
+
+/* Bottom Section */
+.third-section {
+  text-align: center;
+}
+
+.create-project-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.create-project-button:hover {
+  background-color: #0056b3;
+}
+
+/*Screen styling*/
+#screen ul {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+#screen li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#screen li:hover {
+  background-color: #f1f1f1;
+}
+
+#screen button{
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Remove button styling */
+#deleteButton {
+  background-color: #e74c3c;
+
+}
+
+#deleteButton:hover {
+  background-color: #c0392b;
+}
+
+/* Dropdown and add button styling */
+#screen select {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#screen div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#addButton {
+  background-color: #2ecc71;
+}
+
+#addButton:hover {
+  background-color: #27ae60;
+}
+
+#updateButton {
+  background-color: #31a1e7;
+}
+
+#updateButton:hover {
+  background-color: #2e8fcc;
+}
+
+#commentsButton {
+  background-color: #a7e731;
+}
+
+#commentsButton:hover {
+  background-color: #89bd29;
+}
+
+/* General styling */
+#screen h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+div {
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  color: #555;
+}
+
+/* General styling for sprint container */
+#sprint-container {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sprint header styling */
+#sprint-container h3 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section container - stack below h3 */
+#section-container {
+  display: flex;
+  flex-direction: column; /* Stack sections as columns */
+  margin-top: 10px;
+}
+
+/* Each section styling */
+#section-container > div {
+  flex: 1; /* Equal width */
+  border: 1px solid #ddd;
+  margin: 5px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column; /* Stack tasks as columns */
+  align-items: flex-start; /* Align tasks to the left */
+}
+
+/* Section heading styling */
+#section-container h4 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Task card styling */
+#task-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: #e6e6e6;
+  width: 100%; /* Task card spans the full section width */
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button[type="button"]:first-of-type {
+  background-color: #4caf50;
+  color: white;
+}
+
+form button[type="button"]:last-of-type {
+  background-color: #f44336;
+  color: white;
+}
+
+.documents-link {
+  text-decoration: none; /* Removes underline */
+  color: black; /* Makes the text black */
+  font-weight: bold;
+}
+
+.documents-link:hover {
+  color: gray; /* Adds a hover effect for the link */
+}
+
+#login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#login-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+#login-form h2 {
+  margin-bottom: 20px;
+}
+
+#login-form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#login-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#login-form button:hover {
+  background-color: #0056b3;
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+
+
+/* Individual comments */
+.comment {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment strong {
+  color: #007bff;
+  display: block;
+}
+
+#comments-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#comment-div {
+  margin-bottom: 5px; /* Adds space between metadata and comment */
+  font-size: 14px;
+  color: #666; /* Light color for metadata */
+  display: flex;
+  flex-direction: column;
+}

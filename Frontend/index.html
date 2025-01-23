@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agily</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div id="login-popup">
+    <form id="login-form" onsubmit="return handleLogin(event)">
+      <h2>Log In</h2>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+      <p id="error-message"></p>
+    </form>
+  </div>
+
+  <div class="page-container" id="content" style="display: none;">
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <!-- Top Section -->
+        <div class="section-top">
+          <div class="top-left-panel">
+            <span class="label">AGILY</span>
+          </div>
+          <div class="top-right-panel">
+            <button class="menu-button", id="teamButton">Team</button>
+            <button class="menu-button", id="backlogButton">Backlog</button>
+            <button class="menu-button", id="sprintButton">Sprint</button>
+            <button class="menu-button", id="boardButton">Board</button>
+            <button class="menu-button"><a href="https://drive.google.com/drive/folders/1EXZW07QAWeWmseDzTWblPpbXU-9Hp9dj?usp=drive_link" target="_blank" class="documents-link">Documents</a></button>
+            <button class="account-button">⍝</button>
+          </div>
+        </div>
+
+        <div class="bottom-container">
+
+          <div class="section section-left">
+            <!-- Top Section with Title and Icon -->
+            <div class="first-section">
+              <h3 class="title">☰ Projects</h3>
+              <hr>
+            </div>
+
+            <!-- Middle Section with List of Buttons -->
+            <div class="second-section">
+              <!-- Buttons will be dynamically generated -->
+              <!-- More buttons will be added dynamically -->
+              <hr class="second-section-hr", id="divButtons">
+            </div>
+
+            <!-- Bottom Section with Create Button -->
+            <div class="third-section">
+              <button class="create-project-button">🞧 New Project</button>
+            </div>
+          </div>
+
+          <div class="section section-right", id="screen">
+            <h2>WELCOME!</h2>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Agily. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
+
