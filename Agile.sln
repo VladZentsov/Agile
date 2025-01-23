@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agile", "Agile\Agile.csproj", "{10CD6CC2-BF15-40FD-B48B-93E0B012A65E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileDataAccess", "AgileDataAccess\AgileDataAccess.csproj", "{AC2041C0-7A79-4015-A3EE-C91224223E1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileDomain", "AgileDomain\AgileDomain.csproj", "{DAFB35D9-A9CC-4845-9A76-E9FE1E747AB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10CD6CC2-BF15-40FD-B48B-93E0B012A65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CD6CC2-BF15-40FD-B48B-93E0B012A65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CD6CC2-BF15-40FD-B48B-93E0B012A65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CD6CC2-BF15-40FD-B48B-93E0B012A65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2041C0-7A79-4015-A3EE-C91224223E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2041C0-7A79-4015-A3EE-C91224223E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2041C0-7A79-4015-A3EE-C91224223E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2041C0-7A79-4015-A3EE-C91224223E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFB35D9-A9CC-4845-9A76-E9FE1E747AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFB35D9-A9CC-4845-9A76-E9FE1E747AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFB35D9-A9CC-4845-9A76-E9FE1E747AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFB35D9-A9CC-4845-9A76-E9FE1E747AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
